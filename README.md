@@ -1,5 +1,7 @@
-# ☁️ AWS Projects & Cloud Automation Portfolio
-
+  <img width="148" height="148" alt="image" src="https://github.com/user-attachments/assets/46d14e1d-a869-40f9-abe3-9843e06344e0" />
+  
+# ☁️  AWS Projects and Cloud Automation Portfolio
+---
 Welcome to my **AWS Cloud Portfolio Repository** — a curated collection of my hands-on projects, automation scripts, and experiments across the **Amazon Web Services (AWS)** ecosystem.  
 This repository reflects my continuous journey in **DevOps**, **Cloud Engineering**, and **Infrastructure as Code (IaC)** practices.
 
