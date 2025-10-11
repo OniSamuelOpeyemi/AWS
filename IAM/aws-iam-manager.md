@@ -25,7 +25,7 @@ This script creates functions inside the [`aws-iam-manger.sh`](./aws-iam-manager
 - This documentation file explaining the approach, assumptions, testing plan, and cleanup steps.
 
 You can download the script directly:
-- [Download aws-iam-manager.sh](sandbox:/mnt/data/aws-iam-manager.sh)
+- [Download aws-iam-manager.sh](https://github.com/OniSamuelOpeyemi/AWS/blob/patch1/IAM/aws-iam-manager.sh)
 
 ---
 
