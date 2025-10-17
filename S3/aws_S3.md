@@ -42,15 +42,18 @@ By the end of this project, you will:
 1. Log in to **AWS Management Console**.
 2. Navigate to **Services → S3**.
 3. Click **“Create bucket.”**
-4. Enter a unique bucket name, e.g., `capstone-project-bucket-samuel`.
-5. Select a **region** (e.g., `us-east-1`).
+4. Enter a unique bucket name, e.g., `slack-s3-demo-bucket`.
+5. Select a **region** (e.g., `eu-east-1`).
 6. Leave all other options as default or modify:
    - **Block Public Access:** Enabled (recommended)
    - **Versioning:** Disabled (will enable later)
 7. Click **Create bucket.**
 
-📸 *Screenshot #1:* Bucket creation screen  
-📸 *Screenshot #2:* Bucket successfully created  
+📸 *Screenshot #1:* Bucket creation screen ![Bucket creation](./images/bucket_creation.png)
+
+📸 *Screenshot #2:* Bucket successfully created ![Bucket successfully created](./images/bucket_creation2.png)  
+
+Bucket list ![Bucket list](./images/bucket_list.png)
 
 ---
 
@@ -62,8 +65,9 @@ By the end of this project, you will:
 3. Choose files from your local computer.
 4. Click **Upload.**
 
-📸 *Screenshot #3:* Upload dialog showing selected files  
-📸 *Screenshot #4:* Uploaded files listed in the bucket  
+📸 *Screenshot #3:* Upload dialog showing selected files ![Upload dialog](./images/upload_file.png)
+
+📸 *Screenshot #4:* Uploaded files listed in the bucket ![Upload completed](./images/upload_complete.png) 
 
 ---
 
@@ -75,7 +79,7 @@ By the end of this project, you will:
 3. Click **Edit** to change from **Standard** to another class (e.g., *Glacier Instant Retrieval*).
 4. Click **Save changes.**
 
-📸 *Screenshot #5:* Storage class selection  
+📸 *Screenshot #5:* Storage class selection ![Storage class](./images/storage_class.png)
 
 ---
 
@@ -93,8 +97,8 @@ By the end of this project, you will:
 7. Optionally, set **Expiration** to delete after 365 days.
 8. Click **Create rule.**
 
-📸 *Screenshot #6:* Lifecycle rule creation screen  
-📸 *Screenshot #7:* Lifecycle rule summary view  
+📸 *Screenshot #6:* Lifecycle rule creation screen ![Lifecycle rule](./images/lifecycle_rule.png)
+📸 *Screenshot #7:* Lifecycle rule summary view ![Lifecycle completed](./images/lifecycle_rule2.png) 
 
 ---
 
@@ -106,14 +110,13 @@ By the end of this project, you will:
 3. Choose **Server-side encryption with Amazon S3-managed keys (SSE-S3).**
 4. Click **Save changes.**
 
-📸 *Screenshot #8:* SSE-S3 encryption enabled  
+📸 *Screenshot #8:* SSE-S3 encryption enabled ![encryption](./images/encryption_enabled.png)
 
 ### B. Block Public Access
 1. Go to **Permissions → Block public access (bucket settings).**
 2. Ensure all options are turned **ON**.
 3. Save changes.
-
-📸 *Screenshot #9:* Block Public Access settings  
+ 
 
 ---
 
@@ -127,7 +130,6 @@ By the end of this project, you will:
 5. For **Destination**, choose **SNS topic** or **SQS queue**.
 6. Click **Save changes.**
 
-📸 *Screenshot #10:* Event notification setup  
 
 ---
 
@@ -138,7 +140,6 @@ By the end of this project, you will:
 2. Click **Edit → Enable.**
 3. Save changes.
 
-📸 *Screenshot #11:* Versioning enabled  
 
 ---
 
@@ -157,7 +158,7 @@ By the end of this project, you will:
       "Effect": "Allow",
       "Principal": { "AWS": "arn:aws:iam::123456789012:user/DevUser" },
       "Action": ["s3:GetObject"],
-      "Resource": ["arn:aws:s3:::capstone-project-bucket-samuel/*"]
+      "Resource": ["arn:aws:s3:::slash-s3-demo-bucket/*"]
     }
   ]
 }
